@@ -16,7 +16,7 @@ function Result(prop) {
     questions.forEach((item, index) => {
         let correctAns = item.options[item.result];
         let yourAns = item.options[answers[index]];
-        let getClass = () => correctAns == yourAns ? 'correct' : 'wrong';
+        let getClass = () => correctAns === yourAns ? 'correct' : 'wrong';
         result.push(
             <div className="row">
                 <div className="r1">{item.ques}</div>

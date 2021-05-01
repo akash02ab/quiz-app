@@ -35,19 +35,19 @@ function Options(prop) {
         <div className="options">
             <div className={`box ${color[0]}`} onClick={() => checkAnswer(0)}>
                 {prop.options[0]}
-                <Confetti active={color[0] == "correct"} />
+                <Confetti active={color[0] === "correct"} />
             </div>
             <div className={`box ${color[1]}`} onClick={() => checkAnswer(1)}>
                 {prop.options[1]}
-                <Confetti active={ color[1] == "correct" } />
+                <Confetti active={ color[1] === "correct" } />
             </div>
             <div className={`box ${color[2]}`} onClick={() => checkAnswer(2)}>
                 {prop.options[2]}
-                <Confetti active={ color[2] == "correct" } />    
+                <Confetti active={ color[2] === "correct" } />    
             </div>
             <div className={`box ${color[3]}`} onClick={() => checkAnswer(3)}>
                 {prop.options[3]}
-                <Confetti active={ color[3] == "correct" } />
+                <Confetti active={ color[3] === "correct" } />
             </div>
         </div>
     );
