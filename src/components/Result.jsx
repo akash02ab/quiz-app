@@ -6,7 +6,7 @@ function Result(prop) {
     let answers = location.state.answered;
     let score = location.state.score;
     let result = [
-        <div className="row">
+        <div className="row" key={0}>
             <div className="r1">Question</div>
             <div className="r2">Correct Answer</div>
             <div className="r3">Your Answer</div>
@@ -18,7 +18,7 @@ function Result(prop) {
         let yourAns = item.options[answers[index]];
         let getClass = () => correctAns === yourAns ? 'correct' : 'wrong';
         result.push(
-            <div className="row">
+            <div className="row" key={index + 1}>
                 <div className="r1">{item.ques}</div>
                 <div className="r2">{correctAns}</div>
                 <div className={`r3 ${getClass()}`}>{yourAns}</div>
