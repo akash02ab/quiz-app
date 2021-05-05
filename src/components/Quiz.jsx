@@ -55,6 +55,7 @@ function Quiz() {
 		});
 
         clicked = false;
+	// eslint-disable-next-line
 	}, [current]);
 
 	return (
